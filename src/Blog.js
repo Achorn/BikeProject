@@ -9,7 +9,7 @@ class Blog extends Component {
 
   render() {
     let posts = this.props.pts.map((post) => {
-      return <Post fact={post} />;
+      return <Post id={post.id} title={post.title} image={post.image} />;
     });
     return (
       <div>
