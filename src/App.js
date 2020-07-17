@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Blog from "./Blog";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Blog />
+      <ol>
+        <li>
+          <strike>Create Redux store which will store our news</strike>
+        </li>
+        <li>
+          <strike>
+            Create 2 React components - Blog & Post, Blog will render list of
+            posts
+          </strike>
+        </li>
+        <li>
+          <strike>
+            Install Material UI and follow their guides to set up it for React
+            project
+          </strike>
+        </li>
+        <strike>
+          <li>Use Card component in our Post component</li>
+        </strike>
+        <li>
+          <strike>
+            Connect Blog component with Redux and map over our posts to render
+            list of Posts
+          </strike>
+        </li>
+      </ol>
     </div>
   );
 }
